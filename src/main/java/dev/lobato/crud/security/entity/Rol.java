@@ -23,9 +23,9 @@ public class Rol implements Serializable {
     private int id;
     @NotNull
     @Enumerated(EnumType.STRING)
-    private RolNombre rolNOmbre;
+    private RolNombre rolNombre;
 
     public Rol(@NotNull RolNombre rolNombre) {
-        this.rolNOmbre = rolNombre;
+        this.rolNombre = rolNombre;
     }
 }
