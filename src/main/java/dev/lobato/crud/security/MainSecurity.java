@@ -42,7 +42,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth)throws Exception {
-        auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder())
+        auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder());
     }
 
     @Bean
@@ -53,7 +53,7 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
 
 
     @Override
-    public AuthenticationManager authenticationManagerManager() throws Exception{
+    protected AuthenticationManager authenticationManager() throws Exception{
         return super.authenticationManager();
     }
 
